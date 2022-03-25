@@ -93,6 +93,30 @@
   margin-bottom: 100px;
 }
 
+.blog-post-content-2 {
+  max-width: 980px;
+  height: 95px;
+  margin-top: 20px;
+  // border: 2px solid purple;
+
+  .blog-post-title-2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 15px;
+    margin-left: 80px;
+  }
+
+  .blog-post-article-2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 13px;
+    color: $site-blue;
+    margin-top: 11px;
+    margin-left: 80px;
+  }
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 800px) {
   .blog-content {
     max-width: 450px;
@@ -106,6 +130,10 @@
     max-width: 450px;
     margin: 0 auto;
     flex-direction: column;
+
+    .date-container {
+      padding-bottom: 10px;
+    }
 
     .blog-img-container {
       // could be 448
@@ -126,6 +154,7 @@
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
       font-size: 15px;
+      margin-top: 65px;
     }
 
     .blog-post-article {
@@ -137,6 +166,31 @@
     }
     margin-bottom: 100px;
   }
+
+  .blog-post-content-2 {
+    max-width: 450px;
+    height: 95px;
+    // border: 2px solid purple;
+    margin-left: -53px;
+    margin-top: -45px;
+
+    .blog-post-title-2 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 15px;
+      margin-top: 110px;
+    }
+
+    .blog-post-article-2 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 13px;
+      color: $site-blue;
+      margin-top: 15px; 
+    }
+    margin-bottom: 100px;
+  }
+
 }
 //   .blog-post {
 //     max-width: $content-width;
