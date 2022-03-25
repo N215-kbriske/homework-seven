@@ -1,7 +1,7 @@
 # Homework Five
 
 Web4 Link:
-https://in-info-web4.informatics.iupui.edu/~kbriske/homework-six
+https://in-info-web4.informatics.iupui.edu/~kbriske/homework-seven
 
 ## Purpose
 - Teach you how to make your site responsive
