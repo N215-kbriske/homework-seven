@@ -1,6 +1,9 @@
 .blog-content {
-  width: $content-width;
+  max-width: $content-width;
+  // border: 2px solid red;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 
   .blog-header {
     h1 {
@@ -16,82 +19,241 @@
       margin-bottom: 32px;
     }
   }
+}
 
-  .blog-post {
-    width: $content-width;
-    height: 430px;
-    // background-color: lavender;
+.blog-container {
+  // border: 2px solid blue;
+  max-width: $content-width;
+  // was 316
+  height: 262px;
+  display: flex;
+  justify-content: space-between;
 
-    .blog-post-container {
-      width: $content-width;
-    //   background-color: antiquewhite;
-      position: relative;
+  .date-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid orange;
+    background-color: $site-blue;
 
-      //interesting
-      display: flex;
-      justify-content: space-between;
-
-      .blog-date {
-        width: 60px;
-        height: 60px;
-        background-color: $site-blue;
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 22px;
-        color: $site-white;
-        font-weight: bolder;
-      }
-
-      .blog-month-1 {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 12px;
-        color: $site-white;
-        font-weight: lighter;
-        position: absolute;
-        top: 35px;
-        left: 20px;
-      }
-
-      .blog-image {
-        max-width: 900px;
-        height: 259px;
-
-        img {
-        width: 900px;
-        height: 259px;
-        // background-color: aliceblue;
-        background-position: center;
-        background-size: auto;
-        background-repeat: no-repeat;
-        }
-      }
+    .blog-date {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 22px;
+      color: $site-white;
+      font-weight: bolder;
     }
+
+    .blog-month-1 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 12px;
+      color: $site-white;
+      font-weight: lighter;
+    }
+  }
+
+  .blog-img-container {
+    width: 900px;
+    height: 259px;
+    background-color: antiquewhite;
+    // border: 2px solid green;
+
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // overflow: hidden;
+  }
+}
+
+.blog-post-content {
+  max-width: 980px;
+  height: 95px;
+  margin-top: 20px;
+  // border: 2px solid purple;
+
+  .blog-post-title {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 15px;
+    margin-left: 80px;
+  }
+
+  .blog-post-article {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 13px;
+    color: $site-blue;
+    margin-top: 11px;
+    margin-left: 80px;
+  }
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .blog-content {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 30px;
+    // margin-bottom: 20px;
+  }
+
+  .blog-container {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .blog-img-container {
+      // could be 448
+      max-width: 450px;
+      margin: 0 auto;
+      background-color: antiquewhite;
+    }
+  }
+
+  .blog-post-content {
+    max-width: 450px;
+    height: 95px;
+    // border: 2px solid purple;
+    margin-left: -53px;
+    margin-top: 20px;
 
     .blog-post-title {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
-        font-size: 15px;
-        margin-top: 20px;
-        margin-left: 80px;
+      font-size: 15px;
     }
 
-    .blog-post-description {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    .blog-post-article {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
-        font-size: 13px;
-        color: $site-blue;
-        margin-left: 80px;
-        margin-top: 11px;
+      font-size: 13px;
+      color: $site-blue;
+      margin-top: 11px;
     }
+    margin-bottom: 100px;
   }
 }
+//   .blog-post {
+//     max-width: $content-width;
+//     height: 430px;
+//     // background-color: lavender;
 
-.spacer {
-    width: $content-width;
-    height: 35px;
-    // background-color: aquamarine;
-}
+//     .blog-post-container {
+//       max-width: $content-width;
+//       height: 300px;
+//       background-color: antiquewhite;
+//       position: relative;
+
+//       //interesting
+//       display: flex;
+//       justify-content: space-between;
+
+//       .blog-date {
+//         width: 60px;
+//         height: 60px;
+//         background-color: $site-blue;
+//         display: flex;
+//         justify-content: center;
+//         padding-top: 10px;
+//         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+//           sans-serif;
+//         font-size: 22px;
+//         color: $site-white;
+//         font-weight: bolder;
+//       }
+
+//       .blog-month-1 {
+//         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+//           sans-serif;
+//         font-size: 12px;
+//         color: $site-white;
+//         font-weight: lighter;
+//         position: absolute;
+//         top: 35px;
+//         left: 20px;
+//       }
+
+//       .blog-img {
+//         // background-color: orange;
+//         img {
+//           width: 900px;
+//           height: 259px;
+//           background-position: center;
+//           background-size: auto;
+//           background-repeat: no-repeat;
+//         }
+//       }
+//     }
+//   }
+
+//   .blog-text-container {
+//     margin-top: -110px;
+//     max-width: $content-width;
+
+//     .blog-post-title {
+//       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+//         sans-serif;
+//         font-size: 15px;
+//         margin-left: 80px;
+//     }
+
+//     .blog-post-description {
+//         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+//         sans-serif;
+//         font-size: 13px;
+//         color: $site-blue;
+//         margin-left: 80px;
+//         margin-top: 11px;
+//     }
+//   }
+// }
+
+// .spacer {
+//     max-width: $content-width;
+//     height: 35px;
+//     // background-color: aquamarine;
+// }
+
+// @media screen and (max-width: 800px) {
+//   .blog-content {
+//     max-width: 450px;
+//     // align-items: center;
+//     // justify-content: center;
+//     // background-color: antiquewhite;
+
+//     .blog-header {
+//       margin-left: 15px;
+//     }
+
+//     .blog-post {
+
+//       .blog-post-container {
+//         flex-direction: column;
+//         margin-left: 20px;
+//         max-width: 450px;
+
+//         .blog-date {
+//           margin-bottom: 15px;
+//         }
+
+//         // .blog-image {
+//         //   // img {
+//         //   //   max-width: 450px;
+//         //   //   margin-right: 550px;
+//         //   // }
+//         // }
+//       }
+
+//       .blog-post-title {
+//       }
+
+//       .blog-post-description {
+//       }
+//     }
+//   }
+// }

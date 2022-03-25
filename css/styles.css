@@ -1864,7 +1864,7 @@ p {
   }
 }
 .contact-us-content {
-  width: 980px;
+  max-width: 980px;
   margin-top: 60px;
 }
 .contact-us-content .contact-us-header h1 {
@@ -1882,7 +1882,7 @@ p {
   display: flex;
 }
 .contact-us-content .contact-form .mapsImage img {
-  width: 400px;
+  max-width: 400px;
   height: 442px;
   background-color: lavender;
 }
@@ -1891,6 +1891,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 50px;
+  max-width: 980px;
 }
 .contact-us-content .contact-form .contact-form-content .formRow1 {
   width: 529px;
@@ -1915,7 +1916,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 167px;
+  max-width: 167px;
   height: 60px;
   background-color: #79ADDC;
   margin-top: 20px;
@@ -1940,9 +1941,48 @@ p {
   font-size: 18px;
 }
 
+@media screen and (max-width: 800px) {
+  .contact-us-header {
+    margin-left: 190px;
+    margin-bottom: 0px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form .mapsImage img {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .contact-form .contact-form-content {
+    flex-direction: row;
+    max-width: 980px;
+  }
+  .contact-form .contact-form-content .formRow1 {
+    max-width: 450px;
+    margin-left: -45px;
+  }
+  .contact-form .contact-form-content .formRow2 {
+    max-width: 450px;
+    margin-left: -45px;
+    margin-bottom: 30px;
+  }
+  .contact-form .contact-form-content .sendMessage {
+    margin: 0px 105px 90px 105px;
+    padding: 12px;
+  }
+
+  .address {
+    margin: 0px 55px -40px 55px;
+    text-align: center;
+  }
+}
 .blog-content {
-  width: 980px;
+  max-width: 980px;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 .blog-content .blog-header h1 {
   font-family: Proxima;
@@ -1955,67 +1995,96 @@ p {
   border: 1px solid;
   margin-bottom: 32px;
 }
-.blog-content .blog-post {
-  width: 980px;
-  height: 430px;
-}
-.blog-content .blog-post .blog-post-container {
-  width: 980px;
-  position: relative;
+
+.blog-container {
+  max-width: 980px;
+  height: 262px;
   display: flex;
   justify-content: space-between;
 }
-.blog-content .blog-post .blog-post-container .blog-date {
+.blog-container .date-container {
   width: 60px;
   height: 60px;
-  background-color: #79ADDC;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
+  align-items: center;
+  background-color: #79ADDC;
+}
+.blog-container .date-container .blog-date {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 22px;
   color: #FFFFFF;
   font-weight: bolder;
 }
-.blog-content .blog-post .blog-post-container .blog-month-1 {
+.blog-container .date-container .blog-month-1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 12px;
   color: #FFFFFF;
   font-weight: lighter;
-  position: absolute;
-  top: 35px;
-  left: 20px;
 }
-.blog-content .blog-post .blog-post-container .blog-image {
-  max-width: 900px;
-  height: 259px;
-}
-.blog-content .blog-post .blog-post-container .blog-image img {
+.blog-container .blog-img-container {
   width: 900px;
   height: 259px;
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-color: antiquewhite;
 }
-.blog-content .blog-post .blog-post-title {
+
+.blog-post-content {
+  max-width: 980px;
+  height: 95px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.blog-post-content .blog-post-title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15px;
-  margin-top: 20px;
   margin-left: 80px;
 }
-.blog-content .blog-post .blog-post-description {
+.blog-post-content .blog-post-article {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 13px;
   color: #79ADDC;
-  margin-left: 80px;
   margin-top: 11px;
+  margin-left: 80px;
 }
 
-.spacer {
-  width: 980px;
-  height: 35px;
-}
+@media screen and (max-width: 800px) {
+  .blog-content {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 30px;
+  }
 
+  .blog-container {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .blog-container .blog-img-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+  }
+
+  .blog-post-content {
+    max-width: 450px;
+    height: 95px;
+    margin-left: -53px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  .blog-post-content .blog-post-title {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 15px;
+  }
+  .blog-post-content .blog-post-article {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    color: #79ADDC;
+    margin-top: 11px;
+  }
+}
 .special-offers {
   width: 980px;
   margin-top: 60px;
@@ -2048,21 +2117,20 @@ p {
   font-family: Proxima;
   font-size: 30px;
   font-weight: lighter;
-  margin-bottom: 7px;
+  margin-bottom: 17px;
+}
+.special-offers .special-offers-content .text-container .special-offers-title .special-price {
+  color: #ff7d38;
+  font-family: Proxima;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 190px;
+  margin-top: -40px;
 }
 .special-offers .special-offers-content .text-container .special-offers-title hr {
   width: 168px;
   border: 1px solid;
   margin-bottom: 60px;
-}
-.special-offers .special-offers-content .text-container .special-price {
-  position: absolute;
-  color: #FF7D38;
-  font-family: Proxima;
-  font-size: 20px;
-  font-weight: lighter;
-  top: 260px;
-  right: 620px;
 }
 .special-offers .special-offers-content .text-container .special-offers-text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -2093,21 +2161,42 @@ p {
   font-family: Proxima;
   font-size: 30px;
   font-weight: lighter;
-  margin-bottom: 7px;
+  margin-bottom: 17px;
+}
+.special-offers .special-offers-title-2 .special-price-2 {
+  color: #ff7d38;
+  font-family: Proxima;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 190px;
+  margin-top: -40px;
 }
 .special-offers .special-offers-title-2 hr {
   width: 168px;
   border: 1px solid;
   margin-bottom: 60px;
 }
-.special-offers .special-price-2 {
-  position: absolute;
-  color: #FF7D38;
-  font-family: Proxima;
-  font-size: 20px;
-  font-weight: lighter;
-  top: 610px;
-  right: 625px;
+
+@media screen and (max-width: 800px) {
+  .special-offers {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .special-offers .special-offers-header {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 160px;
+  }
+  .special-offers .special-offers-content {
+    margin-top: -30px;
+    margin-bottom: 100px;
+  }
+  .special-offers .text-container .special-offers-title hr {
+    margin-top: -20px;
+  }
+  .special-offers .text-container .special-offers-title-2 hr {
+    margin-top: -20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
