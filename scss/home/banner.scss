@@ -7,6 +7,8 @@
   font-family: Gill;
   src: url(../fonts/GillSans.ttc);
 }
+// #app {
+//   max-width: 1280px;
 
 .banner {
   max-width: $banner-footer-width;
@@ -70,6 +72,7 @@
     }
   }
 }
+// }
 
 @media screen and (max-width: 800px) {
   .banner {
