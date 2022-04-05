@@ -22,7 +22,7 @@ p {
 }
 
 #app {
-  max-width: 980px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -591,8 +591,8 @@ p {
   src: url(../fonts/GillSans.ttc);
 }
 .about {
-  margin-top: 110px;
-  margin-bottom: 180px;
+  width: 980px;
+  margin: 110px auto 180px auto;
 }
 .about .about-header h1 {
   font-family: Proxima;
@@ -685,6 +685,7 @@ p {
 }
 .about-promo-1 {
   max-width: 980px;
+  margin: 0 auto;
   min-height: 304px;
   display: flex;
   justify-content: space-evenly;
@@ -793,6 +794,7 @@ p {
 }
 
 .about-promo-2 {
+  margin: 0 auto;
   max-width: 980px;
   min-height: 304px;
   display: flex;
@@ -902,6 +904,7 @@ p {
 }
 
 .about-promo-3 {
+  margin: 0 auto;
   max-width: 980px;
   min-height: 304px;
   display: flex;
@@ -1035,7 +1038,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-1 .about-hero-text {
   font-size: 50px;
@@ -1064,7 +1067,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-2 .about-hero-text {
   font-size: 50px;
@@ -1093,7 +1096,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-3 .about-hero-text {
   font-size: 50px;
@@ -1122,7 +1125,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-4 .about-hero-text {
   font-size: 50px;
@@ -1151,7 +1154,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-5 .about-hero-text {
   font-size: 50px;
@@ -1180,7 +1183,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-6 .about-hero-text {
   font-size: 50px;
@@ -1209,7 +1212,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-7 .about-hero-text {
   font-size: 50px;
@@ -1238,7 +1241,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-8 .about-hero-text {
   font-size: 50px;
@@ -1267,7 +1270,7 @@ p {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 49px;
+  margin: 49px auto 0px auto;
 }
 .about-hero-9 .about-hero-text {
   font-size: 50px;
@@ -1291,7 +1294,8 @@ p {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  width: 100%;
+  width: 980px;
+  margin: 0 auto;
   height: 100%;
 }
 .tour-details-img-container .tour-details-image-01 {
@@ -1575,7 +1579,8 @@ p {
 }
 
 .about-tour-header-1 {
-  margin-top: 19px;
+  width: 980px;
+  margin: 80px auto 0px auto;
 }
 .about-tour-header-1 h1 {
   font-family: Proxima;
@@ -1594,7 +1599,8 @@ p {
 }
 
 .about-tour-header-2 {
-  margin-top: 80px;
+  width: 980px;
+  margin: 80px auto 0px auto;
 }
 .about-tour-header-2 h1 {
   font-family: Proxima;
@@ -1613,7 +1619,8 @@ p {
 }
 
 .about-tour-header-3 {
-  margin-top: 80px;
+  width: 980px;
+  margin: 80px auto 0px auto;
 }
 .about-tour-header-3 h1 {
   font-family: Proxima;
@@ -1694,17 +1701,19 @@ p {
   }
 
   .tour-details-img-container {
+    width: 450px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: -10px;
   }
 
   .about-tour-header-1 {
-    margin-top: 70px;
+    width: 450px;
+    margin: 70px auto 0px auto;
     text-align: center;
   }
   .about-tour-header-1 hr {
-    margin-left: 175px;
+    margin-left: 158px;
   }
   .about-tour-header-1 p {
     text-align: left;
@@ -1713,11 +1722,12 @@ p {
   }
 
   .about-tour-header-2 {
-    margin-top: 70px;
+    width: 450px;
+    margin: 70px auto 0px auto;
     text-align: center;
   }
   .about-tour-header-2 hr {
-    margin-left: 175px;
+    margin-left: 158px;
   }
   .about-tour-header-2 p {
     text-align: left;
@@ -1726,11 +1736,12 @@ p {
   }
 
   .about-tour-header-3 {
-    margin-top: 70px;
+    width: 450px;
+    margin: 70px auto 0px auto;
     text-align: center;
   }
   .about-tour-header-3 hr {
-    margin-left: 175px;
+    margin-left: 158px;
   }
   .about-tour-header-3 p {
     text-align: left;
@@ -1739,8 +1750,8 @@ p {
   }
 }
 .tours-hero {
-  margin-top: 50px;
   width: 980px;
+  margin: 50px auto;
   height: 200px;
   display: flex;
   align-items: center;
@@ -1771,8 +1782,8 @@ p {
   src: url(../fonts/GillSans.ttc);
 }
 .about {
-  margin-top: 110px;
-  margin-bottom: 180px;
+  width: 980px;
+  margin: 110px auto 180px auto;
 }
 .about .about-header h1 {
   font-family: Proxima;
@@ -1865,7 +1876,7 @@ p {
 }
 .contact-us-content {
   max-width: 980px;
-  margin-top: 60px;
+  margin: 60px auto 0px auto;
 }
 .contact-us-content .contact-us-header h1 {
   font-family: Proxima;
@@ -1981,6 +1992,7 @@ p {
 .blog-content {
   max-width: 980px;
   margin-top: 60px;
+  margin: 60px auto 0px auto;
   display: flex;
   flex-direction: column;
 }
@@ -1998,6 +2010,7 @@ p {
 
 .blog-container {
   max-width: 980px;
+  margin: 0 auto;
   height: 262px;
   display: flex;
   justify-content: space-between;
@@ -2026,13 +2039,16 @@ p {
 .blog-container .blog-img-container {
   width: 900px;
   height: 259px;
-  background-color: antiquewhite;
+  background-image: url(../images/blog/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blog-post-content {
   max-width: 980px;
   height: 95px;
-  margin-top: 20px;
+  margin: 20px auto;
   margin-bottom: 100px;
 }
 .blog-post-content .blog-post-title {
@@ -2051,7 +2067,7 @@ p {
 .blog-post-content-2 {
   max-width: 980px;
   height: 95px;
-  margin-top: 20px;
+  margin: 20px auto;
   margin-bottom: 100px;
 }
 .blog-post-content-2 .blog-post-title-2 {
@@ -2129,7 +2145,7 @@ p {
 }
 .special-offers {
   width: 980px;
-  margin-top: 60px;
+  margin: 60px auto;
 }
 .special-offers .special-offers-header h1 {
   font-family: Proxima;

@@ -9,8 +9,9 @@
 }
 
 .about {
-  margin-top: 110px;
-  margin-bottom: 180px;
+  width: 980px;
+  margin: 110px auto 180px auto;
+  // border: 2px red solid;
 
   .about-header {
     h1 {
